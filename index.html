@@ -2,10 +2,11 @@
 <html lang="ko">
     <head>
         <title>2024 M4 Mac List</title>
+        <link rel="stylesheet" href="css/home-style.css">
     </head>
     <body>
-        <a href="dollar.html">dollar price</a> / <a href="sample.html">Sample Page</a>
-        <br>
+        <div id="top">
+        <a href="dollar.html">dollar price</a>
         <details>
         <summary>로그인 </summary>
         <form action="">
@@ -18,16 +19,27 @@
                 <tr>
                     <td><label for="password">비밀번호</label></td>
                     <td><input type="password" id="password"></td>
-                    <td><button type="button" onclick="window.location.href='createaccount.html'">회원가입</button></td>
+                    <td><button type="button" onclick="window.location.href='signup.html'">회원가입</button></td>
                 </tr>
             </table>
         </form>
         </details>
+        </div>
+        <div id="list">
+        <ol>
+            <li>Macbook Pro</li>
+            <li>iMac</li>
+            <li>Mac mini</li>
+            <li>Mac 주문하기</li>
+        </ol>
+        </div>
+
+        <div id="main">
         <ul type="none">
             <li>
                 <a name="macbook-pro"></a>
                 <a href="https://www.apple.com/kr/macbook-pro/"><img src="images/macbook-pro.webp" alt="macbook-pro" width="40%"></a>
-                <h1><a href="https://www.apple.com/kr/macbook-pro/">MacBook Pro</a></h1>
+                <div class="product-name"><h1><a href="https://www.apple.com/kr/macbook-pro/">MacBook Pro</a></h1></div>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/IHTT_7AjoU8?si=6Nel1m_VHBlt78Wt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <ol>
                     <li>
@@ -60,7 +72,7 @@
             <li>
                 <a name="imac"></a>
                 <a href="https://www.apple.com/kr/imac/"><img src="images/imac.webp" alt="imac" width="40%"></a>
-                <h1><a href="https://www.apple.com/kr/imac/">iMac</a></h1>
+                <div class="product-name"><h1><a href="https://www.apple.com/kr/imac/">iMac</a></h1></div>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/eaB7nCdId0Y?si=MTrC7lGKLhJGg9cc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <ol>
                     <li>
@@ -86,7 +98,7 @@
             <li>
                 <a name="mac-mini"></a>
                 <a href="https://www.apple.com/kr/mac-mini/"><img src="images/mac-mini.webp" alt="mac-mini" width="40%"></a>
-                <h1><a href="https://www.apple.com/kr/mac-mini/">Mac mini</a></h1>
+                <div class="product-name"><h1><a href="https://www.apple.com/kr/mac-mini/">Mac mini</a></h1></div>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/JjpGvjy0Gxk?si=rRfBjcPuYgWrNRY_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <ol>
                     <li>
@@ -166,6 +178,7 @@
                 </td>
             </tr>
         </table>
+        </div>
 
         <h3>Mac 주문하기</h3>
         <form action="">

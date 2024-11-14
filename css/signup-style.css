@@ -1,0 +1,52 @@
+#container {
+    margin: auto;
+    height: 700px;
+    width: 500px;
+}
+
+h1 {
+    text-align: center;
+}
+
+tr :nth-child(1){
+    width: 100px;
+    vertical-align: top;
+}
+
+#id, #mail-addr, #password, #password-confirm, #memo {
+    width: 300px;
+    height: 30px;
+}
+
+#recommand {
+    font-weight: bold;
+}
+
+textarea {
+    max-width: 300px;
+    min-width: 300px;
+}
+
+#memo {
+    height: 50px;
+}
+
+fieldset {
+    margin-bottom: 10px;
+}
+
+.buttons {
+    padding-top: 5px;
+    text-align: center;
+}
+
+.button {
+    height: 30px;
+    width: 70px;
+    margin-right: 10px;
+}
+
+.buttons :hover {
+    background-color: darkgray;
+    border-color: gray;
+}

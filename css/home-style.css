@@ -1,0 +1,17 @@
+* {
+
+    background-color: black;
+    color: white;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+#main {
+    text-align: center;
+}
+
+#list {
+    text-align: left;
+}

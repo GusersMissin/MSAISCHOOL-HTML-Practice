@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    background: linear-gradient(black 10%, #545375 45%,#F8D1D1 75%,orange);
+    color: #FFCD28	;
+    height: 300px;
+    font-size: 3em;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    text-align: center;
+    text-shadow:
+        -7px 7px 2px  #E56D29,
+        -14px 14px  #323232;
+}
+
+body {
+    font-family: "Gamja Flower", sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    color: blue;
+    text-decoration: underline;
+    font-size: 3em;
+    font-family: "East Sea Dokdo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+div{
+    border:1px solid;
+    margin-bottom: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 3px solid purple;
+    background-color: white;
+}
+
+.b01 {
+    border-radius: 0 10px 20px 0;
+    margin-left: 100px;
+    border: 10xp solid #000;
+    /*
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 400px;
+    height: 100px;
+    padding: 20px;
+    box 사이즈로 고정
+    box-sizing: border-box;
+    */
+}
+
+.b02 {
+    margin: 30px auto 0;
+    padding-top: 30px;
+    /*
+    border-radius: 50%;
+    width: 50%;
+    height: 100px;
+    padding: 20px;
+    */
+}
+
+.b03 {
+    border-radius: 50%;
+    line-height: 100px;
+    text-align: center;
+    margin: 30px 0 0 50px;
+}
+
+#wrap {
+    height: 100vh;
+    background-color: rgb(239, 210, 255);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+#navi {
+    border: 1px solid #000;
+}
+
+li {
+    padding: 10px 30px 10px 30px;
+    border: 1px solid #000;
+    display: inline-block;
+}
+
+img {
+    float: left;
+}
+
+#box1 {
+    background: #ffd800;
+    float: left;
+}
+
+#box2 {
+    background: #23de6a;
+    float: right;
+}
+
+#box3 {
+    background: #260ed5;
+}
+
+#box4 {
+    background: #d30c70;
+    clear: both
+}
