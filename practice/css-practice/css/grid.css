@@ -1,0 +1,95 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.box1 {
+    background-color: red;
+    color: white;
+    text-align: center;
+    grid-area: box1;
+    align-items:end
+}
+.box2 {
+    background-color: cornflowerblue;
+    color: white;
+    text-align: right;
+    grid-area: box2;
+    align-items: center;
+}
+.box3 {
+    background-color:orange;
+    color: white;
+    text-align: center;
+    grid-area: box3;
+    align-items: end;
+}
+.box4 {
+    background-color:lawngreen;
+    color: white;
+    text-align: right;
+    grid-area: box4;
+    align-items: center;
+}
+.box5 {
+    background-color: white;
+    text-align: center;
+    grid-area: box5;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    div {
+        width: 700;
+        display: grid;
+        grid-template-columns:  repeat(3, 100px);
+        grid-template-rows: repeat(3, 100px);
+        grid-template-areas: 
+        "box1 box4 box4"
+        "box1 box5 box3"
+        "box2 box2 box3";
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    div {
+        width: 700;
+        display: grid;
+        grid-template-columns:  repeat(3, 100px);
+        grid-template-rows: repeat(3, 100px);
+        grid-template-areas: 
+        "box4 box3 box3"
+        "box4 box5 box2"
+        "box1 box1 box2";
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width: 1599px) {
+    div {
+        width: 700;
+        display: grid;
+        grid-template-columns:  repeat(3, 100px);
+        grid-template-rows: repeat(3, 100px);
+        grid-template-areas: 
+        "box3 box2 box2"
+        "box3 box5 box1"
+        "box4 box4 box1";
+    }
+}
+
+@media screen and (min-width:1600px){
+    div {
+        width: 700;
+        display: grid;
+        grid-template-columns:  repeat(3, 100px);
+        grid-template-rows: repeat(3, 100px);
+        grid-template-areas: 
+        "box2 box1 box1"
+        "box2 box5 box4"
+        "box3 box3 box4";
+    }
+}
