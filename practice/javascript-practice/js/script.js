@@ -164,9 +164,7 @@ for(i=0;i<all;i++){
 document.write("</table>")
 */
 
-
-document.write('<div style="background-color:black;">')
-for(i=1;i<15;i++){
+/*){
     for(j=1;j<15-i;j++){
         document.write("&nbsp")
     }
@@ -185,3 +183,195 @@ for(i=1;i<15;i++){
     document.write("<br>")
 }
 document.write('</div>')
+*/
+
+/*
+//팩토리얼
+const start = prompt("수를 입력해주세요")
+let num = start
+let result = 1
+while(1<num){
+    result *= num--;
+}
+document.write(`${start}! = ${result}입니다`)
+*/
+
+/*
+sum = 0
+const num = prompt("수를 입력해주세요.")
+for(i=0;i<=num;i++){
+    if(i%2===0){
+        sum+=i;
+        continue;
+    }
+}
+document.write(sum)
+*/
+
+/*
+// 숫자 맞추기
+const randomNumber = Math.floor(Math.random() * 100) + 1;
+let chance = 10
+let input
+while(chance>0){
+    input = prompt("숫자를 입력해주세요.")
+    if(1<=input && input<=100){
+        if(input < randomNumber){
+            alert(`UP!\n기회가 ${chance}번 남았습니다.`)
+        }else if (input > randomNumber){
+            alert(`DOWN!\n기회가 ${--chance}번 남았습니다.`)
+        }else{
+            alert("정답을 맞췄습니다.\n숫자 맞추기를 종료합니다.")
+            break;
+        }
+    } else {
+        alert("잘못된 값을 입력하셨습니다.")
+    }
+}
+if(chance===0){
+    alert("숫자 맞추기에 실패하셨습니다.")
+}else{
+    alert(`${10-chance}번 만에 성공하셨습니다.`)
+}
+*/
+
+/*
+const fruits =['apple','orange','banana']
+for(const fruit of fruits){
+    console.log(fruit)
+}
+
+const user = {name:'chris',age:30, city:'anyang'};
+for(const k in user){
+    console.log(k)
+    console.log(user[k])
+}
+*/
+
+/*
+function greeting(){
+    console.log('인사');
+}
+greeting();
+*/
+
+/*
+function sum(a,b) {
+    return a+b;
+}
+
+let result = sum(1,2)
+alert(result);
+*/
+
+/*
+let varA = function funcA(){
+    console.log('funcA')
+}
+
+varA();
+funcA();
+*/
+
+//콜백함수
+/*
+function main(value){
+    //이 부분이 콜백함수
+    value();
+}
+
+function sub() {
+    console.log("I am sub");
+}
+
+//main(sub)
+main(() => {
+    console.log("I am sub2");
+});
+*/
+
+/*
+function repeat(count, callback) {
+    for(let idx = 1; idx <= count; idx++){
+        callback(idx);
+    }
+
+}
+
+repeat(5, (idx) => {
+    console.log(idx)
+});
+
+repeat(5, (idx) => {
+    console.log(idx*2)
+});
+
+repeat(5, (idx) => {
+    console.log(idx*5)
+});
+*/
+
+/*
+const numbers = [272,52,103,32,57]
+
+//for(i in numbers){
+//    console.log(`${i}번째 요소: ${numbers[i]}`)
+//}
+
+//numbers.forEach((element,index) => {
+//    console.log(`${index}번쨰 요소: ${element}`)
+//})
+
+return_numbers = numbers.map(element => element**2)
+console.log(return_numbers);
+*/
+
+/*
+const numbers = [0,1,2,3,4,5]
+
+evenNumbers = numbers.filter(index => index%2===0)
+
+console.log(`원래 배열: ${numbers}`)
+console.log(`짝수만 추출: ${evenNumbers}`)
+*/
+const genre = ["Sci-Fi", "Action", "Drama", "Comedy"];
+console.log("추천 받을 장르를 선택하세요:");
+genre.forEach((genre, index) => console.log(`${index + 1}. ${genre}`));
+
+const userChoice = prompt('추천 받을 장르를 선택하세요: ');
+const selectedGenre = genre[userChoice - 1];
+
+recommendMovies(selectedGenre);
+
+function recommendMovies(selectedGenre){
+    const movies = [
+        {
+            title:'Inception',
+            genre:'Sci-Fi',
+            rating:8.8
+        },
+        {
+            title:'The Dark Knight',
+            genre:'Action',
+            rating:9.0
+        },
+        {
+            title:'Parasite',
+            genre:'Drama',
+            rating:8.6
+        },
+        {
+            title:'Avengers: Endgame',
+            genre:'Actjion',
+            rating:8.4
+        },
+        {
+            title:'Interstellar',
+            genre:'Sci-Fi',
+            rating:8.6
+        }
+    ]
+    
+    filteredMovies = movies.filter(index => index.genre === selectedGenre);
+    filteredMovies.forEach(movie => console.log(`제목: ${movie.title}\n평점: ${movie.rating}`))
+}
